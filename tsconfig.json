@@ -1,0 +1,42 @@
+{
+  "include": [
+    "src",
+    "test"
+  ],
+  "exclude": [
+    "src/_shims/**/*-deno.ts"
+  ],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "paths": {
+      "@public/beyond_identity_api": [
+        "src/index.ts"
+      ],
+      "@public/beyond_identity_api/*": [
+        "src/*"
+      ]
+    },
+    "declaration": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "skipLibCheck": true
+  }
+}
